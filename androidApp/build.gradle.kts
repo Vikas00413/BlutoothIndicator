@@ -12,6 +12,7 @@ kotlin {
     }
 }
 dependencies {
+    implementation(projects.bluetoothCore)
     implementation(projects.sharedLogic)
 
     implementation("androidx.core:core-ktx:1.13.1")

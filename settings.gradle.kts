@@ -29,5 +29,6 @@ dependencyResolutionManagement {
 }
 
 include(":androidApp")
+include(":bluetooth-core")
 include(":sharedLogic")
 include(":sharedUI")

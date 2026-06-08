@@ -1,6 +1,7 @@
 package org.example.project
 
 import android.app.Application
+import com.example.iotpoc.bluetooth.BluetoothLibrary
 import org.example.project.di.androidPlatformDataModule
 import org.example.project.di.dataModule
 import org.example.project.di.initKoin
@@ -26,6 +27,7 @@ class BluetoothIndicatorApplication : Application() {
                 viewModelModule,
             )
         }
+        BluetoothLibrary.initialize(this)
         SyncNotificationHelper.createChannel(this)
         BluetoothSyncForegroundService.start(this)
     }
